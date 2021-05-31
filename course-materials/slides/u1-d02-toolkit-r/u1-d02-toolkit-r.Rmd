@@ -177,25 +177,6 @@ install.packages("package_name")
 library(package_name)
 ```
 
-<!-- --- -->
-
-<!-- ## R essentials (continued) -->
-
-<!-- - Columns (variables) in data frames are accessed with `$`: -->
-
-<!-- .small[ -->
-<!-- ```{r eval=FALSE} -->
-<!-- dataframe$var_name -->
-<!-- ``` -->
-<!-- ] -->
-
-<!-- -- -->
-
-<!-- - Object documentation can be accessed with `?` -->
-
-<!-- ```{r eval=FALSE} -->
-<!-- ?mean -->
-<!-- ``` -->
 
 ---
 
