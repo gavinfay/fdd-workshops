@@ -1,7 +1,0 @@
-exploring-data
-slides-and-exercises
-visualising-data
-wrangling-data
-slides-and-exercises-1
-wrangling-and-tidying-data
-extra-bits
