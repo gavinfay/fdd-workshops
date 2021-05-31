@@ -1,0 +1,18 @@
+bookdown::bs4_book:
+  css: [css/dsbox.css, css/fontawesome/css/all.css]
+  theme:
+    primary: "#1E5C65"
+  repo: https://github.com/gavinfay/fdd-workshops/
+
+bookdown::gitbook:
+  css: [css/style.css, css/dsbox.css, css/fontawesome/css/all.css]
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Fishery Dependent Data R Workshops</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit:
+      link: https://github.com/openintrostat/ims/edit/master/%s
+      text: "Edit"

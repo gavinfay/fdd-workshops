@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+author: "Gavin Fay"
+date: "5/31/2021"
+output: html_document
+---
+
+packages needed
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+install.packages("devtools")
+install.packages('conflicted')
+devtools::install_github("gadenbuie/xaringanExtra")
+devtools::install_github("hadley/emo")
+install.packages('viridis')
+install.packages('sugrrants')
+install.packages('magick')
+install.packages('Tmisc')
+devtools::install_github("rstudio-education/dsbox")
+devtools::install_github("gadenbuie/countdown")
+install.packages('palmerpenguins')
+install.packages('openintro')
+install.packages('ggridges')
+install.packages('tidytext')
+install.packages('genius')
+install.packages('skimr')
+install.packages('here')
+install.packages('janitor')
+```
