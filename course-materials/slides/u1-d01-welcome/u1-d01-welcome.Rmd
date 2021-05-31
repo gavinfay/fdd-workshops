@@ -36,6 +36,7 @@ class: middle
 .pull-left-wide[
 **Q - What data science background does this workshop assume?**  
 A - None to slim.
+]
 
 ---
 
@@ -104,16 +105,7 @@ knitr::include_graphics("img/data-science-cycle/data-science-cycle.006.png")
 ```
 
 
-<!-- .pull-left[ -->
-<!-- ```{r echo=FALSE, out.width="75%", fig.align="left"} -->
-<!-- knitr::include_graphics("img/google-trend-index.png") -->
-<!-- ``` -->
-<!-- ] -->
-<!-- .pull-right[ -->
-<!-- ```{r echo=FALSE, out.width="90%", fig.align="right"} -->
-<!-- knitr::include_graphics("img/data-science-cycle/data-science-cycle.006.png") -->
-<!-- ``` -->
-<!-- ] -->
+
 
 ---
 
@@ -138,7 +130,6 @@ travel <- tribble(
 travel
 ```
 ]
-
 
 
 <!-- ```{r echo=FALSE, out.width="90%", fig.align="left"} -->
