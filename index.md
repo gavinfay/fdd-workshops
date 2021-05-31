@@ -5,10 +5,6 @@ title: "Fishery Dependent Data Workshops"
 author: "Gavin Fay"
 description: "Data Science Workshops for Fishery Dependent Data"
 date: "2021-05-31"
-#github-repo: rstudio-education/datasciencebox
-#twitter-handle: minebocek
-#cover-image: dsbox.png
-#url: 'https\://datasciencebox.org/'
 documentclass: book
 link-citations: yes
 ---
