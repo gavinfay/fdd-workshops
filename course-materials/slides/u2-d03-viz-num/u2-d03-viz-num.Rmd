@@ -311,36 +311,36 @@ ggplot(loans, aes(x = interest_rate,
 ]
 ]
 
----
+<!-- --- -->
 
-class: middle
+<!-- class: middle -->
 
-# Relationships numerical variables
+<!-- # Relationships numerical variables -->
 
----
+<!-- --- -->
 
-## Scatterplot
+<!-- ## Scatterplot -->
 
-```{r warning = FALSE}
-ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
-  geom_point()
-```
+<!-- ```{r warning = FALSE} -->
+<!-- ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + -->
+<!--   geom_point() -->
+<!-- ``` -->
 
----
+<!-- --- -->
 
-## Hex plot
+<!-- ## Hex plot -->
 
-```{r warning = FALSE}
-ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
-  geom_hex()
-```
+<!-- ```{r warning = FALSE} -->
+<!-- ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + -->
+<!--   geom_hex() -->
+<!-- ``` -->
 
----
+<!-- --- -->
 
-## Hex plot
+<!-- ## Hex plot -->
 
-```{r warning = FALSE}
-ggplot(loans %>% filter(debt_to_income < 100), 
-       aes(x = debt_to_income, y = interest_rate)) +
-  geom_hex()
-```
+<!-- ```{r warning = FALSE} -->
+<!-- ggplot(loans %>% filter(debt_to_income < 100),  -->
+<!--        aes(x = debt_to_income, y = interest_rate)) + -->
+<!--   geom_hex() -->
+<!-- ``` -->

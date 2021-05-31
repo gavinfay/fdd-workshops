@@ -21,6 +21,7 @@ library(tidyverse)
 library(magick)
 library(Tmisc)
 library(dsbox)
+library(skimr)
 ```
 
 class: middle
@@ -57,22 +58,6 @@ Take a `glimpse` at the data:
 ```{r}
 glimpse(starwars)
 ```
-
-<!-- --- -->
-
-<!-- .question[ -->
-<!-- How many rows and columns does this dataset have? -->
-<!-- What does each row represent? -->
-<!-- What does each column represent? -->
-<!-- ] -->
-
-<!-- ```{r eval = FALSE} -->
-<!-- ?starwars -->
-<!-- ``` -->
-
-<!-- ```{r echo=FALSE} -->
-<!-- knitr::include_graphics("img/starwars-help.png") -->
-<!-- ``` -->
 
 ---
 

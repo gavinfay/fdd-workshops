@@ -37,30 +37,6 @@ layout: true
 
 
 
-&lt;!-- class: middle --&gt;
-
-&lt;!-- # Recap --&gt;
-
-&lt;!-- --- --&gt;
-
-&lt;!-- ## Variables --&gt;
-
-&lt;!-- - **Numerical** variables can be classified as **continuous** or **discrete** based on whether or not the variable can take on an infinite number of values or only non-negative whole numbers, respectively. --&gt;
-&lt;!-- - If the variable is **categorical**, we can determine if it is **ordinal** based on whether or not the levels have a natural ordering. --&gt;
-
-&lt;!-- --- --&gt;
-
-&lt;!-- ### Data  --&gt;
-
-&lt;!-- ```{r} --&gt;
-&lt;!-- library(openintro) --&gt;
-&lt;!-- loans &lt;- loans_full_schema %&gt;% --&gt;
-&lt;!--   select(loan_amount, interest_rate, term, grade,  --&gt;
-&lt;!--          state, annual_income, homeownership, debt_to_income) --&gt;
-&lt;!-- glimpse(loans) --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- --- --&gt;
 
 class: middle
 
@@ -76,7 +52,7 @@ ggplot(loans, aes(x = homeownership)) +
   geom_bar()
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-2-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -89,7 +65,7 @@ ggplot(loans, aes(x = homeownership,
   geom_bar()
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-3-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -101,7 +77,7 @@ ggplot(loans, aes(x = homeownership, fill = grade)) +
 * geom_bar(position = "fill")
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-4-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-10-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -110,10 +86,10 @@ Which bar plot is a more useful representation for visualizing the relationship 
 ]
 
 .pull-left[
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 .pull-right[
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-6-1.png" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -122,7 +98,7 @@ Which bar plot is a more useful representation for visualizing the relationship 
 
 .panelset[
 .panel[.panel-name[Plot]
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-7-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-13-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 ]
 .panel[.panel-name[Code]
 
@@ -164,7 +140,7 @@ ggplot(loans, aes(x = homeownership, y = loan_amount)) +
   geom_violin()
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-8-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-14-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
 
@@ -177,7 +153,7 @@ ggplot(loans, aes(x = loan_amount, y = grade, fill = grade, color = grade)) +
   geom_density_ridges(alpha = 0.5)
 ```
 
-&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-9-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="u2-d04-viz-cat_files/figure-html/unnamed-chunk-15-1.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 ---
     </textarea>
