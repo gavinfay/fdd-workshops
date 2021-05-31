@@ -359,48 +359,39 @@ ggplot(loans, aes(x = interest_rate,
 ]
 ]
 
----
+&lt;!-- --- --&gt;
 
-class: middle
+&lt;!-- class: middle --&gt;
 
-# Relationships numerical variables
+&lt;!-- # Relationships numerical variables --&gt;
 
----
+&lt;!-- --- --&gt;
 
-## Scatterplot
+&lt;!-- ## Scatterplot --&gt;
 
+&lt;!-- ```{r warning = FALSE} --&gt;
+&lt;!-- ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + --&gt;
+&lt;!--   geom_point() --&gt;
+&lt;!-- ``` --&gt;
 
-```r
-ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
-  geom_point()
-```
+&lt;!-- --- --&gt;
 
-&lt;img src="u2-d03-viz-num_files/figure-html/unnamed-chunk-19-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;!-- ## Hex plot --&gt;
 
----
+&lt;!-- ```{r warning = FALSE} --&gt;
+&lt;!-- ggplot(loans, aes(x = debt_to_income, y = interest_rate)) + --&gt;
+&lt;!--   geom_hex() --&gt;
+&lt;!-- ``` --&gt;
 
-## Hex plot
+&lt;!-- --- --&gt;
 
+&lt;!-- ## Hex plot --&gt;
 
-```r
-ggplot(loans, aes(x = debt_to_income, y = interest_rate)) +
-  geom_hex()
-```
-
-&lt;img src="u2-d03-viz-num_files/figure-html/unnamed-chunk-20-1.png" width="60%" style="display: block; margin: auto;" /&gt;
-
----
-
-## Hex plot
-
-
-```r
-ggplot(loans %&gt;% filter(debt_to_income &lt; 100), 
-       aes(x = debt_to_income, y = interest_rate)) +
-  geom_hex()
-```
-
-&lt;img src="u2-d03-viz-num_files/figure-html/unnamed-chunk-21-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;!-- ```{r warning = FALSE} --&gt;
+&lt;!-- ggplot(loans %&gt;% filter(debt_to_income &lt; 100),  --&gt;
+&lt;!--        aes(x = debt_to_income, y = interest_rate)) + --&gt;
+&lt;!--   geom_hex() --&gt;
+&lt;!-- ``` --&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
