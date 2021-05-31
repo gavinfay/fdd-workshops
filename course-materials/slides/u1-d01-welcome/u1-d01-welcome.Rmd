@@ -163,128 +163,128 @@ travel
 <!-- knitr::include_graphics("img/unvotes/unvotes.gif") -->
 <!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: middle --> -->
+<!-- class: middle -->
 
-<!-- <!-- # Let's dive in! --> -->
+<!-- # Let's dive in! -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- background-image: url("img/unvotes/unvotes-01.jpeg") --> -->
+<!-- background-image: url("img/unvotes/unvotes-01.jpeg") -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-02.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-02.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-03.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-03.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-04.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-04.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-05.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-05.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-06.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-06.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-07.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-07.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-08.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="90%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-08.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-09.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="90%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-09.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-10.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="90%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-10.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-11.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="90%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-11.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-12.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="90%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-12.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-13.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-13.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- class: inverse --> -->
+<!-- class: inverse -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-14.jpeg") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="100%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-14.jpeg") -->
+<!-- ``` -->
 
-<!-- <!-- --- --> -->
+<!-- --- -->
 
-<!-- <!-- .center[ --> -->
-<!-- <!-- .large[ --> -->
-<!-- <!-- [minecr.shinyapps.io/unvotes](https://minecr.shinyapps.io/unvotes/) --> -->
-<!-- <!-- ] --> -->
-<!-- <!-- ] --> -->
+<!-- .center[ -->
+<!-- .large[ -->
+<!-- [minecr.shinyapps.io/unvotes](https://minecr.shinyapps.io/unvotes/) -->
+<!-- ] -->
+<!-- ] -->
 
-<!-- <!-- ```{r echo=FALSE, out.width="65%"} --> -->
-<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-15.png") --> -->
-<!-- <!-- ``` --> -->
+<!-- ```{r echo=FALSE, out.width="65%"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes-15.png") -->
+<!-- ``` -->
