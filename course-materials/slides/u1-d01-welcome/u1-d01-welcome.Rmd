@@ -4,7 +4,7 @@ subtitle: "<br> 1.1 Exploratory Data Analysis <br> Acknolwedgements: Data Scienc
 author: "[datasciencebox.org](https://datasciencebox.org/)"
 output:
   xaringan::moon_reader:
-    css: ["../xaringan-themer.css", "../slides.css"]
+    css: ["/course-materials/slides/xaringan-themer.css", "/course-materials/slides/slides.css"]
     lib_dir: libs
     nature:
       ratio: "16:9"
@@ -103,7 +103,6 @@ knitr::include_graphics("img/data-science-cycle/data-science-cycle.005.png")
 knitr::include_graphics("img/data-science-cycle/data-science-cycle.006.png")
 ```
 
-<!-- --- -->
 
 <!-- .pull-left[ -->
 <!-- ```{r echo=FALSE, out.width="75%", fig.align="left"} -->
@@ -140,152 +139,152 @@ travel
 ```
 ]
 
----
 
-```{r echo=FALSE, out.width="90%", fig.align="left"}
-knitr::include_graphics("img/data-science-cycle/data-science-cycle.007.png")
-```
 
----
-
-```{r echo=FALSE, out.width="90%", fig.align="left"}
-knitr::include_graphics("img/data-science-cycle/data-science-cycle.008.png")
-```
-
----
-
-```{r echo=FALSE, out.width="90%", fig.align="left"}
-knitr::include_graphics("img/data-science-cycle/data-science-cycle.009.png")
-```
-
----
-
-```{r echo=FALSE, out.width="85%", fig.align="left"}
-knitr::include_graphics("img/unvotes/unvotes.gif")
-```
-
-<!-- --- -->
-
-<!-- class: middle -->
-
-<!-- # Let's dive in! -->
-
-<!-- --- -->
-
-<!-- background-image: url("img/unvotes/unvotes-01.jpeg") -->
-
-<!-- --- -->
-
-<!-- class: inverse -->
-
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-02.jpeg") -->
+<!-- ```{r echo=FALSE, out.width="90%", fig.align="left"} -->
+<!-- knitr::include_graphics("img/data-science-cycle/data-science-cycle.007.png") -->
 <!-- ``` -->
 
 <!-- --- -->
 
-<!-- class: inverse -->
-
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-03.jpeg") -->
+<!-- ```{r echo=FALSE, out.width="90%", fig.align="left"} -->
+<!-- knitr::include_graphics("img/data-science-cycle/data-science-cycle.008.png") -->
 <!-- ``` -->
 
 <!-- --- -->
 
-<!-- class: inverse -->
-
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-04.jpeg") -->
+<!-- ```{r echo=FALSE, out.width="90%", fig.align="left"} -->
+<!-- knitr::include_graphics("img/data-science-cycle/data-science-cycle.009.png") -->
 <!-- ``` -->
 
 <!-- --- -->
 
-<!-- class: inverse -->
-
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-05.jpeg") -->
+<!-- ```{r echo=FALSE, out.width="85%", fig.align="left"} -->
+<!-- knitr::include_graphics("img/unvotes/unvotes.gif") -->
 <!-- ``` -->
 
-<!-- --- -->
+<!-- <!-- --- --> -->
 
-<!-- class: inverse -->
+<!-- <!-- class: middle --> -->
 
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-06.jpeg") -->
-<!-- ``` -->
+<!-- <!-- # Let's dive in! --> -->
 
-<!-- --- -->
+<!-- <!-- --- --> -->
 
-<!-- class: inverse -->
+<!-- <!-- background-image: url("img/unvotes/unvotes-01.jpeg") --> -->
 
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-07.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-02.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="90%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-08.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-03.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="90%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-09.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-04.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="90%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-10.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-05.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="90%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-11.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-06.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="90%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-12.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-07.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-13.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- class: inverse -->
+<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-08.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="100%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-14.jpeg") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
 
-<!-- --- -->
+<!-- <!-- class: inverse --> -->
 
-<!-- .center[ -->
-<!-- .large[ -->
-<!-- [minecr.shinyapps.io/unvotes](https://minecr.shinyapps.io/unvotes/) -->
-<!-- ] -->
-<!-- ] -->
+<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-09.jpeg") --> -->
+<!-- <!-- ``` --> -->
 
-<!-- ```{r echo=FALSE, out.width="65%"} -->
-<!-- knitr::include_graphics("img/unvotes/unvotes-15.png") -->
-<!-- ``` -->
+<!-- <!-- --- --> -->
+
+<!-- <!-- class: inverse --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-10.jpeg") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- <!-- --- --> -->
+
+<!-- <!-- class: inverse --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-11.jpeg") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- <!-- --- --> -->
+
+<!-- <!-- class: inverse --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="90%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-12.jpeg") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- <!-- --- --> -->
+
+<!-- <!-- class: inverse --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-13.jpeg") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- <!-- --- --> -->
+
+<!-- <!-- class: inverse --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="100%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-14.jpeg") --> -->
+<!-- <!-- ``` --> -->
+
+<!-- <!-- --- --> -->
+
+<!-- <!-- .center[ --> -->
+<!-- <!-- .large[ --> -->
+<!-- <!-- [minecr.shinyapps.io/unvotes](https://minecr.shinyapps.io/unvotes/) --> -->
+<!-- <!-- ] --> -->
+<!-- <!-- ] --> -->
+
+<!-- <!-- ```{r echo=FALSE, out.width="65%"} --> -->
+<!-- <!-- knitr::include_graphics("img/unvotes/unvotes-15.png") --> -->
+<!-- <!-- ``` --> -->
