@@ -32,3 +32,9 @@ xaringans <- dir_info(recurse = 3, glob = "course-materials/*.Rmd") %>%
   #filter(str_detect(path, "u2-d13")) %>%
   pull(path)
 walk(xaringans, render)
+
+
+xaringans <- dir_info(recurse = 3, glob = "course-materials/*.Rmd") %>% 
+  filter(str_detect(path, "fdd")) %>%
+  pull(path)
+walk(xaringans, render)

@@ -24,7 +24,7 @@
 <meta name="author" content="Gavin Fay" />
 
 
-<meta name="date" content="2021-05-31" />
+<meta name="date" content="2021-06-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,14 +33,15 @@
   
 <link rel="prev" href="exploring-data.html"/>
 
-<script src="libs/jquery/jquery.min.js"></script>
-<link href="libs/gitbook/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -50,9 +51,8 @@
 
 
 
-<script src="libs/accessible-code-block/empty-anchor.js"></script>
-<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -75,20 +75,25 @@
 <li><a href="./">Fishery Dependent Data R Workshops</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-workshops"><i class="fa fa-check"></i>R Workshops</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructions"><i class="fa fa-check"></i>Instructions</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-of-conduct"><i class="fa fa-check"></i>Code of Conduct</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-science-course-in-a-box"><i class="fa fa-check"></i>Data Science Course in a Box</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing"><i class="fa fa-check"></i>Licensing</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>1</b> Exploring data</a><ul>
-<li class="chapter" data-level="1.1" data-path="exploring-data.html"><a href="exploring-data.html#slides-and-exercises"><i class="fa fa-check"></i><b>1.1</b> Slides and exercises</a><ul>
+<li class="chapter" data-level="1" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>1</b> Exploring data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="exploring-data.html"><a href="exploring-data.html#slides-and-exercises"><i class="fa fa-check"></i><b>1.1</b> Slides and exercises</a>
+<ul>
 <li class="chapter" data-level="1.1.1" data-path="exploring-data.html"><a href="exploring-data.html#visualising-data"><i class="fa fa-check"></i><b>1.1.1</b> Visualising data</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="wrangling-data.html"><a href="wrangling-data.html"><i class="fa fa-check"></i><b>2</b> Wrangling data</a><ul>
-<li class="chapter" data-level="2.1" data-path="wrangling-data.html"><a href="wrangling-data.html#slides-and-exercises-1"><i class="fa fa-check"></i><b>2.1</b> Slides and exercises</a><ul>
+<li class="chapter" data-level="2" data-path="wrangling-data.html"><a href="wrangling-data.html"><i class="fa fa-check"></i><b>2</b> Wrangling data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="wrangling-data.html"><a href="wrangling-data.html#slides-and-exercises-1"><i class="fa fa-check"></i><b>2.1</b> Slides and exercises</a>
+<ul>
 <li class="chapter" data-level="2.1.1" data-path="wrangling-data.html"><a href="wrangling-data.html#wrangling-and-tidying-data"><i class="fa fa-check"></i><b>2.1.1</b> Wrangling and tidying data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="wrangling-data.html"><a href="wrangling-data.html#extra-bits"><i class="fa fa-check"></i><b>2.2</b> Extra bits</a></li>
@@ -113,16 +118,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="wrangling-data" class="section level1">
+<div id="wrangling-data" class="section level1" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Wrangling data</h1>
 <p>This session focuses on data wrangling and manipulation.</p>
 <!-- ::: {.rstudio-cloud} -->
 <!-- The RStudio Cloud workspace for Data Science Course in a Box project is [here](https://rstudio.cloud/spaces/1655/join?access_code=5rdjusfIYF5iI0Gum2vNsBDLdtdnIEELBkf2EivK). -->
 <!-- You can join the workspace and play around with the application exercises. -->
 <!-- ::: -->
-<div id="slides-and-exercises-1" class="section level2">
+<div id="slides-and-exercises-1" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Slides and exercises</h2>
-<div id="wrangling-and-tidying-data" class="section level3">
+<div id="wrangling-and-tidying-data" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Wrangling and tidying data</h3>
 <div class="slide-deck">
 <p><strong>Tidy data</strong></p>
@@ -245,7 +250,7 @@
 <!-- ::: -->
 </div>
 </div>
-<div id="extra-bits" class="section level2">
+<div id="extra-bits" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Extra bits</h2>
 <div class="slide-deck">
 <p><strong>Importing data</strong></p>
@@ -641,15 +646,15 @@
 
     </div>
   </div>
-<script src="libs/gitbook/js/app.min.js"></script>
-<script src="libs/gitbook/js/lunr.js"></script>
-<script src="libs/gitbook/js/clipboard.min.js"></script>
-<script src="libs/gitbook/js/plugin-search.js"></script>
-<script src="libs/gitbook/js/plugin-sharing.js"></script>
-<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook/js/jquery.highlight.js"></script>
-<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({

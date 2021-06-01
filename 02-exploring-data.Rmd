@@ -162,25 +162,24 @@ IMS :: [Sec 2.2 - Exploring categorical data](https://openintro-ims.netlify.app/
 :::
 :::
 
-::: {.application-exercise}
-**StarWars + Dataviz**
+<!-- ::: {.application-exercise} -->
+<!-- **StarWars + Dataviz** -->
 
-::: {.source}
-[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-starwars-dataviz/starwars.Rmd)
-:::
-
-<!-- ::: {.video} -->
-<!-- [Video](https://youtu.be/3UaLPtCKkXQ) -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-starwars-dataviz/starwars.Rmd) -->
 <!-- ::: -->
-:::
+
+<!-- <!-- ::: {.video} --> -->
+<!-- <!-- [Video](https://youtu.be/3UaLPtCKkXQ) --> -->
+<!-- <!-- ::: --> -->
+<!-- ::: -->
 
 
 ::: {.application-exercise}
 **FDD + Dataviz**
 
 ::: {.source}
-[Source]
-<!-- (https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-starwars-dataviz/starwars.Rmd) -->
+[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-01-fdd-dataviz/fdd-dataviz.Rmd)
 :::
 
 <!-- ::: {.video} -->
