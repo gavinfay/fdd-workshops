@@ -68,7 +68,7 @@ Also students are introduced to the toolkit: R, RStudio, R Markdown, Git, and Gi
 <!-- ::: -->
 
 ::: {.slide-deck}
-**Unit 1 - Deck 3: Meet the toolkit - Version control and collaboration**
+**Meet the toolkit - Version control and collaboration**
 
 ::: {.slides}
 [Slides](https://gavinfay.github.io/fdd-workshops/course-materials/slides/u1-d03-toolkit-git/u1-d03-toolkit-git.html#1)
@@ -169,9 +169,9 @@ IMS :: [Sec 2.2 - Exploring categorical data](https://openintro-ims.netlify.app/
 <!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-starwars-dataviz/starwars.Rmd) -->
 <!-- ::: -->
 
-<!-- <!-- ::: {.video} --> -->
-<!-- <!-- [Video](https://youtu.be/3UaLPtCKkXQ) --> -->
-<!-- <!-- ::: --> -->
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/3UaLPtCKkXQ) -->
+<!-- ::: -->
 <!-- ::: -->
 
 
