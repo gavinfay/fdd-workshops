@@ -1,6 +1,6 @@
 ---
 title: "Fishery Dependent Data Workshops"
-subtitle: "<br> 1.1 Exploratory Data Analysis <br> Acknolwedgements: Data Science in a Box"
+subtitle: "<br> 1.1 Exploratory Data Analysis <br> Acknowledgements: Data Science in a Box"
 author: "[datasciencebox.org](https://datasciencebox.org/)"
 output:
   xaringan::moon_reader:
@@ -19,11 +19,19 @@ output:
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(emo)
+#library(icon)
 ```
 
 class: middle
 
 # Hello world!
+
+### Gavin Fay   
+<br> __2021-06-02: UMassD Fishery Dependent Data woRkshop__
+<br>[gavinfay.github.io/fdd-workshops](https://gavinfay.github.io/fdd-workshops)
+<br>[gfay@umassd.edu](gfay@umassd.edu)
+<br>t:[@gavin_fay](https://twitter.com/gavin_fay)
+<br>Rstudio Cloud: 
 
 ---
 
