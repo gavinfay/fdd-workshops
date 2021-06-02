@@ -31,7 +31,7 @@ class: middle
 <br>[gavinfay.github.io/fdd-workshops](https://gavinfay.github.io/fdd-workshops)
 <br>[gfay@umassd.edu](gfay@umassd.edu)
 <br>t:[@gavin_fay](https://twitter.com/gavin_fay)
-<br>Rstudio Cloud: 
+<br>Rstudio Cloud: [rstudio.cloud/project/2602600](https://rstudio.cloud/project/2602600)
 
 ---
 
