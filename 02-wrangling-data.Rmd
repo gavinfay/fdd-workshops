@@ -108,24 +108,23 @@ R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
 :::
 :::
 
-::: {.application-exercise}
-**Hotels + Data wrangling**
+<!-- ::: {.application-exercise} -->
+<!-- **Hotels + Data wrangling** -->
 
-::: {.source}
-[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-04-hotels-datawrangling/hotels-datawrangling.Rmd)
-:::
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-04-hotels-datawrangling/hotels-datawrangling.Rmd) -->
+<!-- ::: -->
 
 <!-- ::: {.video} -->
 <!-- [Video](https://youtu.be/BXlOd4EYQrI) -->
 <!-- ::: -->
-:::
+<!-- ::: -->
 
 ::: {.application-exercise}
 **FDD + Data wrangling**
 
 ::: {.source}
-[Source]() 
-<!-- (https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-04-hotels-datawrangling/hotels-datawrangling.Rmd) -->
+[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-02-fdd-datawrangling/fdd-datawrangling.Rmd) -->
 :::
 
 <!-- ::: {.video} -->

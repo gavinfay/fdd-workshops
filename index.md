@@ -4,7 +4,7 @@ site: bookdown::bookdown_site
 title: "Fishery Dependent Data Workshops"
 author: "Gavin Fay"
 description: "Data Science Workshops for Fishery Dependent Data"
-date: "2021-06-01"
+date: "2021-06-02"
 documentclass: book
 link-citations: yes
 ---
