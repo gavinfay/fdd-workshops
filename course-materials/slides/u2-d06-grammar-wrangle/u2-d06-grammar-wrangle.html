@@ -4,6 +4,7 @@
     <title>Grammar of data wrangling</title>
     <meta charset="utf-8" />
     <meta name="author" content="datasciencebox.org" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
     <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
@@ -537,72 +538,7 @@ find("keys") %&gt;%
 --
 - `+` used in **ggplot2** plots is used for "layering", *we create the plot in layers, separated by `+`*
 
-&lt;!-- --- --&gt;
 
-&lt;!-- ## dplyr --&gt;
-
-&lt;!-- .midi[ --&gt;
-&lt;!-- ❌ --&gt;
-
-&lt;!-- ```{r error=TRUE} --&gt;
-&lt;!-- hotels + --&gt;
-&lt;!--   select(hotel, lead_time) --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- ✅ --&gt;
-
-&lt;!-- ```{r eval=FALSE} --&gt;
-&lt;!-- hotels %&gt;% --&gt;
-&lt;!--   select(hotel, lead_time) --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- ```{r echo=FALSE, output.lines=6} --&gt;
-&lt;!-- hotels %&gt;% --&gt;
-&lt;!--   select(hotel, lead_time) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ] --&gt;
-
-&lt;!-- --- --&gt;
-
-&lt;!-- ## ggplot2 --&gt;
-
-&lt;!-- .midi[ --&gt;
-&lt;!-- ❌ --&gt;
-
-&lt;!-- ```{r error=TRUE} --&gt;
-&lt;!-- ggplot(hotels, aes(x = hotel, fill = deposit_type)) %&gt;% --&gt;
-&lt;!--   geom_bar() --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- ✅ --&gt;
-
-&lt;!-- ```{r out.width="25%"} --&gt;
-&lt;!-- ggplot(hotels, aes(x = hotel, fill = deposit_type)) + --&gt;
-&lt;!--   geom_bar() --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ] --&gt;
-
-&lt;!-- --- --&gt;
-
-&lt;!-- ## Code styling --&gt;
-
-&lt;!-- Many of the styling principles are consistent across `%&gt;%` and `+`: --&gt;
-
-&lt;!-- - always a space before --&gt;
-&lt;!-- - always a line break after (for pipelines with more than 2 lines) --&gt;
-
-&lt;!-- ❌ --&gt;
-
-&lt;!-- ```{r eval=FALSE} --&gt;
-&lt;!-- ggplot(hotels,aes(x=hotel,y=deposit_type))+geom_bar() --&gt;
-&lt;!-- ``` --&gt;
-
-&lt;!-- ✅ --&gt;
-
-&lt;!-- ```{r eval=FALSE} --&gt;
-&lt;!-- ggplot(hotels, aes(x = hotel, y = deposit_type)) +  --&gt;
-&lt;!--   geom_bar() --&gt;
-&lt;!-- ``` --&gt;
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

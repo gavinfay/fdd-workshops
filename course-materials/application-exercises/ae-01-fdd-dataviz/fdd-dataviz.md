@@ -30,17 +30,17 @@ glimpse(logbook)
 
     ## Rows: 152,000
     ## Columns: 11
-    ## $ year     [3m[38;5;246m<dbl>[39m[23m 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 19…
-    ## $ vessel   [3m[38;5;246m<chr>[39m[23m "Sebulba", "Lobot", "Barriss Offee", "Finn", "Jocasta Nu", "Mon Mothma", "Lando Calris…
-    ## $ world    [3m[38;5;246m<chr>[39m[23m "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "H…
-    ## $ quarter  [3m[38;5;246m<dbl>[39m[23m 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
-    ## $ towmin   [3m[38;5;246m<dbl>[39m[23m 42.16495, 46.81169, 50.59232, 32.79854, 30.86095, 43.63696, 52.48207, 51.41123, 60.017…
-    ## $ depth    [3m[38;5;246m<dbl>[39m[23m 105.10010, 84.23955, 116.58324, 114.03918, 115.41286, 111.52167, 145.45374, 97.43148, …
-    ## $ kept     [3m[38;5;246m<dbl>[39m[23m 8.811933, 7.640126, 13.346137, 7.630187, 9.351864, 5.175822, 5.584466, 5.252058, 6.674…
-    ## $ height   [3m[38;5;246m<dbl>[39m[23m 112, 175, 166, NA, 167, 150, 177, 198, 216, 157, 196, 180, 168, 191, 183, 94, 165, 163…
-    ## $ mass     [3m[38;5;246m<dbl>[39m[23m 40.0, 79.0, 50.0, NA, NA, NA, 79.0, 102.0, 159.0, NA, 66.0, 80.0, 55.0, 90.0, 78.2, 45…
-    ## $ species  [3m[38;5;246m<chr>[39m[23m "Dug", "Human", "Mirialan", "Human", "Human", "Human", "Human", "Besalisk", "Kaleesh",…
-    ## $ starship [3m[38;5;246m<chr>[39m[23m "Belbullab-22 starfighter", "Naboo Royal Starship", "Belbullab-22 starfighter", "Slave…
+    ## $ year     <dbl> 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 1977, 19…
+    ## $ vessel   <chr> "Sebulba", "Lobot", "Barriss Offee", "Finn", "Jocasta Nu", "Mon Mothma", "Lando Calris…
+    ## $ world    <chr> "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "Haruun Kal", "H…
+    ## $ quarter  <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…
+    ## $ towmin   <dbl> 42.16495, 46.81169, 50.59232, 32.79854, 30.86095, 43.63696, 52.48207, 51.41123, 60.017…
+    ## $ depth    <dbl> 105.10010, 84.23955, 116.58324, 114.03918, 115.41286, 111.52167, 145.45374, 97.43148, …
+    ## $ kept     <dbl> 8.811933, 7.640126, 13.346137, 7.630187, 9.351864, 5.175822, 5.584466, 5.252058, 6.674…
+    ## $ height   <dbl> 112, 175, 166, NA, 167, 150, 177, 198, 216, 157, 196, 180, 168, 191, 183, 94, 165, 163…
+    ## $ mass     <dbl> 40.0, 79.0, 50.0, NA, NA, NA, 79.0, 102.0, 159.0, NA, 66.0, 80.0, 55.0, 90.0, 78.2, 45…
+    ## $ species  <chr> "Dug", "Human", "Mirialan", "Human", "Human", "Human", "Human", "Besalisk", "Kaleesh",…
+    ## $ starship <chr> "Belbullab-22 starfighter", "Naboo Royal Starship", "Belbullab-22 starfighter", "Slave…
 
 ``` r
 #skim(logbook)
