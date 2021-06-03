@@ -178,6 +178,11 @@ IMS :: [Sec 2.2 - Exploring categorical data](https://openintro-ims.netlify.app/
 ::: {.application-exercise}
 **FDD + Dataviz**
 
+Switch to our Rstudio Cloud project to work on the exercise.
+Navigate to the folder
+"course-materials/application-exercises/ae-01-fdd-dataviz"
+and open the `.Rmd` file `fdd-dataviz.Rmd`
+
 ::: {.source}
 [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-01-fdd-dataviz/fdd-dataviz.Rmd)
 :::
