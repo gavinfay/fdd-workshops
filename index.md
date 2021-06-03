@@ -15,10 +15,10 @@ These resources were created for learning and developing shared understanding ar
 
 ## R Workshops {.unnumbered}
 
-Session | Date | Topic
---------|------|------
-1.1 | 06/02/2021 | Exploratory Data Analysis
-1.2 | 06/02/3021 | Data Wrangling
+Session | Date | Topic | Recordings
+--------|------|------|------
+1.1 | 06/02/2021 | Exploratory Data Analysis | [Zoom link](https://umassd.zoom.us/rec/share/N3v336_Pbycnd6mILj-lfnes6TOmhxny0hOVwRZDkXtPS60JPUIB1BQZJ57bTXTr.i6AjOoSQJcnuLTH4)
+1.2 | 06/02/3021 | Data Wrangling | [Zoom link](https://umassd.zoom.us/rec/share/7b17zWBMp3vIhlbL6qmlVBjkSO3wVlSJVaDY4rn9Vi8TNast37gMJib9Ua45eSYN.AORUGEVyb_q3e1Si)
 
 
 ## Instructions {.unnumbered}
@@ -27,7 +27,13 @@ We will be using RStudio Cloud for these workshops.
 Before the workshops, please visit [Rstudio Cloud](https://rstudio.cloud) and create a free account.  
 Free accounts give limited usage, but are more than enough for these workshops.  
 
-Why RStudio Cloud? We want to maximize time during our workshops for learning, and not on tech support. Using a standard way of interacting with the course material makes this easier, and avoids the hassles of multiple installation types, versions of R, etc. You may wish to set up R and RStudio on your local machine but that will not be required here.  
+Why RStudio Cloud? We want to maximize time during our workshops for learning, and not on tech support. Using a standard way of interacting with the course material makes this easier, and avoids the hassles of multiple installation types, versions of R, etc. You may wish to set up R and RStudio on your local machine but that will not be required here. 
+
+### RStudio Cloud
+
+Instructions for how to navigate to our RStudio Cloud project and set up the project so you can work on the exercises in your own web browser can be found here.
+[RStudio Cloud set up guide & instructions](https://github.com/gavinfay/fdd-workshops/issues/1)
+
 
 ## Code of Conduct {.unnumbered}
 

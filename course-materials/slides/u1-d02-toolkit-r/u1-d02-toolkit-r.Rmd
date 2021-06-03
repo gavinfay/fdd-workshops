@@ -33,6 +33,7 @@ library(lubridate)
 <!-- - introds.org -->
 <!-- - Learn -->
 - Zoom
+- GoogleDoc
 <!-- - Teams -->
 <!-- - Piazza -->
 ]

@@ -123,11 +123,6 @@ R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
 ::: {.application-exercise}
 **FDD + Data wrangling**
 
-Switch to our Rstudio Cloud project to work on the exercise.
-Navigate to the folder
-"course-materials/application-exercises/ae-02-fdd-datawrangline"
-and open the `.Rmd` file `fdd-datawrangling.Rmd`
-
 ::: {.source}
 [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-02-fdd-datawrangling/fdd-datawrangling.Rmd) -->
 :::
