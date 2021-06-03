@@ -88,25 +88,6 @@ R4DS :: [Chp 13 - Relational data](https://r4ds.had.co.nz/relational-data.html)
 :::
 :::
 
-::: {.slide-deck}
-**Tidying data**
-
-::: {.slides}
-[Slides](https://gavinfay.github.io/fdd-workshops/course-materials/slides/u2-d09-tidying/u2-d09-tidying.html#1)
-:::
-
-::: {.source}
-[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u2-d09-tidying)
-:::
-
-<!-- ::: {.video} -->
-<!-- [Video](https://youtu.be/x3KM5uxaFdI) -->
-<!-- ::: -->
-
-::: {.reading}
-R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
-:::
-:::
 
 <!-- ::: {.application-exercise} -->
 <!-- **Hotels + Data wrangling** -->
@@ -130,6 +111,14 @@ R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
 <!-- ::: {.video} -->
 <!-- [Video](https://youtu.be/BXlOd4EYQrI) -->
 <!-- ::: -->
+:::
+
+::: {.application-exercise}
+**More wrangling**
+
+::: {.slides}
+[Excellent {learnr} wrangling tutorial using the {palmerpenguins}](https://allisonhorst.shinyapps.io/dplyr-learnr/) package, by [Dr. Allison Horst](https://twitter.com/allison_horst)
+:::
 :::
 
 <!-- ### Importing and recoding data -->
@@ -171,6 +160,27 @@ R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
 <!-- ::: -->
 
 ## Extra bits
+
+::: {.slide-deck}
+**Tidying data**
+
+::: {.slides}
+[Slides](https://gavinfay.github.io/fdd-workshops/course-materials/slides/u2-d09-tidying/u2-d09-tidying.html#1)
+:::
+
+::: {.source}
+[Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u2-d09-tidying)
+:::
+
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/x3KM5uxaFdI) -->
+<!-- ::: -->
+
+::: {.reading}
+R4DS :: [Chp 12 - Tidy data](https://r4ds.had.co.nz/tidy-data.html)
+:::
+:::
+
 
 ::: {.slide-deck}
 **Importing data**
