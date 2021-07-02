@@ -4,7 +4,7 @@ site: bookdown::bookdown_site
 title: "Fishery Dependent Data Workshops"
 author: "Gavin Fay"
 description: "Data Science Workshops for Fishery Dependent Data"
-date: "2021-06-29"
+date: "2021-07-02"
 documentclass: book
 link-citations: yes
 ---
@@ -18,7 +18,8 @@ These resources were created for learning and developing shared understanding ar
 Session | Date | Topic | Recordings
 --------|------|------|------
 1.1 | 06/02/2021 | Exploratory Data Analysis | [Zoom link](https://umassd.zoom.us/rec/share/N3v336_Pbycnd6mILj-lfnes6TOmhxny0hOVwRZDkXtPS60JPUIB1BQZJ57bTXTr.i6AjOoSQJcnuLTH4)
-1.2 | 06/02/3021 | Data Wrangling | [Zoom link](https://umassd.zoom.us/rec/share/7b17zWBMp3vIhlbL6qmlVBjkSO3wVlSJVaDY4rn9Vi8TNast37gMJib9Ua45eSYN.AORUGEVyb_q3e1Si)
+1.2 | 06/02/2021 | Data Wrangling | [Zoom link](https://umassd.zoom.us/rec/share/7b17zWBMp3vIhlbL6qmlVBjkSO3wVlSJVaDY4rn9Vi8TNast37gMJib9Ua45eSYN.AORUGEVyb_q3e1Si)
+2 | 07/06/2021 | Linear Models with `{tidymodels}` | To Come
 
 
 ## Instructions {.unnumbered}
