@@ -1,0 +1,170 @@
+---
+title: "Star Wars fisher logbooks - cpue standardization"
+author: "Gavin Fay <br> Acknowledgements: Mine Çetinkaya-Rundel"
+output: github_document
+---
+
+```{r load-pkg, message = FALSE}
+if(!"tidymodels" %in% rownames(installed.packages())) install.packages("tidymodels")
+if(!"additive" %in% rownames(installed.packages())) install.packages("additive")
+if(!"multilevelmod" %in% rownames(installed.packages())) devtools::install_github("tidymodels/multilevelmod")
+library(tidyverse)
+library(skimr)
+library(tidymodels)
+library(additive)
+library(multilevelmod)
+```
+
+```{r load-data, message = FALSE}
+logbook <- read_csv("sw_fdd_logbook.csv")
+permit <- read_csv("sw_fdd_permit.csv")
+logbook
+permit
+logbook <- logbook %>% 
+  left_join(permit) %>% 
+  I()
+logbook
+```
+
+
+```{r}
+glimpse(logbook)
+```
+
+
+We will
+
+-   engineer features?
+-   train a model to standardize cpue
+-   make predictions
+
+```{r}
+logbook %>%
+  distinct(year, vessel)
+```
+
+### Exercise 1 - Calculate the percentage of catch kept by the FVs Boba Fett, Jocasta Nu, Grievous, and Han Solo for each year.
+
+```{r percentge-catch}
+percent_catch <- logbook %>% 
+  group_by(_____, _____) %>% 
+  mutate(_______ = _______) %>% 
+  ______
+  _____ and so on....
+```
+
+### Exercise 2 - Create a new variable 'log_cpue' that is the natural logarithm of the amount of catch kept per minute tow time. plot and summarize how the CPUE varies over time (remember to change chunk option `eval` to TRUE)
+
+```{r cpue, eval=FALSE}
+model_data <- logbook %>% 
+  mutate(cpue = ________,
+         ______ = ______) %>% 
+  I()
+model_data %>% 
+  ggplot() +
+  aes(x = ______, y = _____) +
+  geom_boxplot() +
+  NULL
+```
+
+### Exercise 3 - Split the data into training (80%) and testing (20%). Ensure a balance of data over years in the split (we are interested in predicting year effects!)
+
+```{r split}
+set.seed(2187)
+splits <- model_data %>% 
+  ________(_____, _____)
+train_data <- ________
+test_data <- _______
+train_data
+train_data %>% 
+  count(year)
+```
+
+### Exercise 4 - Specify a linear regression model for log(cpue). Fit a model for the nominal `log_cpue` over time. Inspect the model summary statistics using `tidy()` and `glance()`, and interpret the coefficients.
+Report the AIC of the training data fit, and (BONUS) the `rmse` of fitted model predictions for the test data.  
+Plot/Summarize the model coefficients and their confidence intervals  
+Plot the estimated model predictions for the annual CPUE over time.    
+```{r model}
+cpue_mod <- _____() %>% 
+  set_engine(_____) %>% 
+  
+nominal_cpue <- cpue_mod %>%   
+  fit(________, data = ______)
+
+_______(nominal_cpue)
+_______(nominal_cpue)
+_______
+
+```
+
+### Exercise 5 - Create another linear model that includes all the available covariates (removing those that derived the response variable). Create a recipe that makes `year` a factor, updates the role of `vessel` and `species` to not be a predictor, uses `world`, `starship`, and `quarter` as a factor, removes all zero variance predictors, and normalizes all continuous predictor variables.
+
+```{r recipe}
+
+cpue_recipe <- recipe() %>% 
+  add_formula(_________) %>% 
+  _________ etc.
+```
+
+### Exercise 6 - Build a workflow for fitting the model specified earlier and using the recipe you developed to preprocess the data.
+
+```{r workflow}
+cpue_wf <- ______() %>% 
+  _____(_____) %>% 
+  _____(______)
+```
+
+### Exercise 7 - Fit the model to training data and interpret a couple of the slope coefficients.
+
+```{r fit}
+
+```
+
+### Exercise 8 - Compare the standardized CPUE model to the nominal CPUE using `AIC` and the `rmse` of predictions of the testing data.
+
+```{r comparison}
+
+```
+
+### Exercise 9 - _stretch goal 1_: Obtain 1,000 bootstrap data sets from the training data. Fit these resamples using the workflow defined above to obtain bootstrapped confidence intervals for the depth coefficient and prediction of CPUE in 1995.
+
+```{r bootstrap}
+
+```
+
+
+### Exercise 10 - _stretch goal 2_: Explore models that add/remove covariates and/or use nonlinear functions (e.g. polynomials or smooths) for some of the covariates (or perhaps include vessel as a random effect). Compare the performance of these to the models above.
+
+```{r model-selection}
+
+```
+
+
+
+## Data dictionaries
+
+Below is the full data dictionary.
+
+### Logbook data
+
+| variable                       | class     | description                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:-------------------------------|:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| year                          | double | Year in which tow took place                                                                                                                                                                                                                                                                                                                                                                                        |
+| vessel                    | character    | Name of the fishing vessel                                                                                                                                                                                                                                                                                                                                                                         |
+| world                      | character    | Name of the world where the tow tool place                                                                                                                                                                                                                                                                                                                              |
+| quarter              | double    | quarter of the year when the tow took place                                                                                                                                                                                                                                                                                                                                                                                                                |
+| towmin             | double | duration of the tow in minutes                                                                                                                                                                                                                                                                                                                                                                                                               |
+| depth       | double    | depth (in m) of the tow                                                                                                                                                                                                                                                                                                                                                                                                |
+| kept      | double    | weight of fish (in kg) kept from the tow                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+
+### Permit data
+
+| variable                       | class     | description                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|:-------------------------------|:----------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| year                          | double | Year in which tow took place                                                                                                                                                                                                                                                                                                                                                                                        |
+| vessel                    | character    | Name of the fishing vessel                                                                                                                                                                                                                                                                                                                                                                         |
+| height                      | double    | height (in m) of the vessel                                                                                                                                                                                                                                                                                                                              |
+| mass              | double    | mass (in tons) of the vessel                                                                                                                                                                                                                                                                                                                                                                                                                |
+| species             | character | species of the crew                                                                                                                                                                                                                                                                                                                                                                                                               |
+| starship       | character    | type of vessel                                                                                                                                                                                                                                                                                                                                                                                                |

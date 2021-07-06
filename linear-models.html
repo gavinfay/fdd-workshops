@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Linear modeling using tidymodels | Fishery Dependent Data Workshops</title>
+  <meta name="description" content="Data Science Workshops for Fishery Dependent Data" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Linear modeling using tidymodels | Fishery Dependent Data Workshops" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Data Science Workshops for Fishery Dependent Data" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Linear modeling using tidymodels | Fishery Dependent Data Workshops" />
+  
+  <meta name="twitter:description" content="Data Science Workshops for Fishery Dependent Data" />
+  
+
+<meta name="author" content="Gavin Fay" />
+
+
+<meta name="date" content="2021-07-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="wrangling-data.html"/>
+<link rel="next" href="stats-material.html"/>
+<script src="libs/header-attrs/header-attrs.js"></script>
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/dsbox.css" type="text/css" />
+<link rel="stylesheet" href="css/fontawesome/css/all.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Fishery Dependent Data R Workshops</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r-workshops"><i class="fa fa-check"></i>R Workshops</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructions"><i class="fa fa-check"></i>Instructions</a>
+<ul>
+<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#rstudio-cloud"><i class="fa fa-check"></i><b>0.0.1</b> RStudio Cloud</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#code-of-conduct"><i class="fa fa-check"></i>Code of Conduct</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-science-course-in-a-box"><i class="fa fa-check"></i>Data Science Course in a Box</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#licensing"><i class="fa fa-check"></i>Licensing</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>1</b> Exploring data</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="exploring-data.html"><a href="exploring-data.html#slides-and-exercises"><i class="fa fa-check"></i><b>1.1</b> Slides and exercises</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="exploring-data.html"><a href="exploring-data.html#visualising-data"><i class="fa fa-check"></i><b>1.1.1</b> Visualising data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="wrangling-data.html"><a href="wrangling-data.html"><i class="fa fa-check"></i><b>2</b> Wrangling data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="wrangling-data.html"><a href="wrangling-data.html#slides-and-exercises-1"><i class="fa fa-check"></i><b>2.1</b> Slides and exercises</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="wrangling-data.html"><a href="wrangling-data.html#wrangling-and-tidying-data"><i class="fa fa-check"></i><b>2.1.1</b> Wrangling and tidying data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="wrangling-data.html"><a href="wrangling-data.html#extra-bits"><i class="fa fa-check"></i><b>2.2</b> Extra bits</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="linear-models.html"><a href="linear-models.html"><i class="fa fa-check"></i><b>3</b> Linear modeling using tidymodels</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="linear-models.html"><a href="linear-models.html#slides-and-exercises-2"><i class="fa fa-check"></i><b>3.1</b> Slides and exercises</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="linear-models.html"><a href="linear-models.html#modelling-data"><i class="fa fa-check"></i><b>3.1.1</b> Modelling data</a></li>
+<li class="chapter" data-level="3.1.2" data-path="linear-models.html"><a href="linear-models.html#classification-and-model-building"><i class="fa fa-check"></i><b>3.1.2</b> Classification and model building</a></li>
+<li class="chapter" data-level="3.1.3" data-path="linear-models.html"><a href="linear-models.html#model-validation"><i class="fa fa-check"></i><b>3.1.3</b> Model validation</a></li>
+<li class="chapter" data-level="3.1.4" data-path="linear-models.html"><a href="linear-models.html#uncertainty-quantification"><i class="fa fa-check"></i><b>3.1.4</b> Uncertainty quantification</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="stats-material.html"><a href="stats-material.html"><i class="fa fa-check"></i><b>4</b> Statistics background lectures</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="stats-material.html"><a href="stats-material.html#lectures-from-2020-offering-of-mar536-biological-statistics-ii"><i class="fa fa-check"></i><b>4.1</b> Lectures from 2020 offering of MAR536: Biological Statistics II</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="training-resources.html"><a href="training-resources.html"><i class="fa fa-check"></i><b>5</b> R training resources</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="training-resources.html"><a href="training-resources.html#introductory-r-learning-resources"><i class="fa fa-check"></i><b>5.1</b> Introductory R learning resources</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Fishery Dependent Data Workshops</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="linear-models" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Linear modeling using tidymodels</h1>
+<p>07/06/2021</p>
+<p>This session focuses on linear modeling, using the <code>{tidymodels}</code> framework, with a view to catch rate standardization analyses.</p>
+<p>Background lecture material for reviews on probability, linear regression, and GLMs/GAMs (and other topics ) are available in the <a href="stats-material.html#stats-material">statistics material</a> chapter.</p>
+<div id="slides-and-exercises-2" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Slides and exercises</h2>
+<div id="modelling-data" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Modelling data</h3>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 1: The language of models</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d01-language-of-models/u4-d01-language-of-models.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d01-language-of-models">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/MWkkvDopBKc) -->
+<!-- ::: -->
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 2: Fitting and interpreting models</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d02-fitting-interpreting-models/u4-d02-fitting-interpreting-models.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d02-fitting-interpreting-models">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/69U92Q3pwnA) -->
+<!-- ::: -->
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/intro-linear-models.html">Chp 3 - Introduction to linear models</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 3: Modelling nonlinear relationships</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d03-modeling-nonlinear-relationships/u4-d03-modeling-nonlinear-relationships.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d03-modeling-nonlinear-relationships">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/j4MZ6ZdHnHg) -->
+<!-- ::: -->
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 4: Models with multiple predictors</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d04-model-multiple-predictors/u4-d04-model-multiple-predictors.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d04-model-multiple-predictors">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/mjkNabD4oi4) -->
+<!-- ::: -->
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/multi-logistic-models.html#regression-multiple-predictors">Sec 4.1 - Regression with multiple predictors</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 5: More models with multiple predictors</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d05-more-model-multiple-predictors/u4-d05-more-model-multiple-predictors.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d05-more-model-multiple-predictors">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/nJAYRnLPb10) -->
+<!-- ::: -->
+</div>
+</div>
+<div id="classification-and-model-building" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Classification and model building</h3>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 6: Logistic regression</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d06-logistic-reg/u4-d06-logistic-reg.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d06-logistic-reg">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/AidXFYSYfJg) -->
+<!-- ::: -->
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/multi-logistic-models.html#logistic-regression">Sec 4.5 - Logistic regression</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 7: Prediction and overfitting</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d07-prediction-overfitting/u4-d07-prediction-overfitting.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d07-prediction-overfitting">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/Qd4lu_Lmwi0) -->
+<!-- ::: -->
+<div class="reading">
+<p>tidymodels :: <a href="https://www.tidymodels.org/start/models/">Build a model</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 8: Feature engineering</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d08-feature-engineering/u4-d08-feature-engineering.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d08-feature-engineering">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/wZt9ab4jBZ4) -->
+<!-- ::: -->
+<div class="reading">
+<p>tidymodels :: <a href="https://www.tidymodels.org/start/recipes/">Preprocess your data with recipes</a></p>
+</div>
+</div>
+</div>
+<div id="model-validation" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Model validation</h3>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 9: Cross validation</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d09-cross-validation/u4-d09-cross-validation.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d09-cross-validation">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/L1KfIISmUT4) -->
+<!-- ::: -->
+<div class="reading">
+<p>tidymodels :: <a href="https://www.tidymodels.org/start/resampling/">Evaluate your model with resampling</a></p>
+</div>
+</div>
+<div class="application-exercise">
+<p><strong>Star Wars Fishery CPUE, Pt. 1</strong></p>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-fdd-linearmodeling/fdd-cpue-model.Rmd">Source</a></p>
+</div>
+</div>
+</div>
+<div id="uncertainty-quantification" class="section level3" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Uncertainty quantification</h3>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 10: Quantifying uncertainty</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d10-quantify-uncertainty/u4-d10-quantify-uncertainty.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d10-quantify-uncertainty">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/LYpKrtZmQtI) -->
+<!-- ::: -->
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 11: Bootstrapping</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d11-bootstrap/u4-d11-bootstrap.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d11-bootstrap">Source</a></p>
+</div>
+<!-- ::: {.video} -->
+<!-- [Video](https://youtu.be/bdqpI3iVOso) -->
+<!-- ::: -->
+<div class="reading">
+<p>IMS :: <a href="https://openintro-ims.netlify.app/intro-stat-inference.html#boot-ci">Sec 5.2 - Bootstrap confidence intervals</a></p>
+</div>
+</div>
+<div class="application-exercise">
+<p><strong>Star Wars Fishery CPUE, Pt. 1</strong></p>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/application-exercises/ae-03-fdd-linearmodeling/fdd-cpue-model.Rmd">Source</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 12: Hypothesis testing</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d12-hypothesis-testing/u4-d12-hypothesis-testing.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d12-hypothesis-testing">Source</a></p>
+</div>
+<div class="reading">
+<p><a href="https://openintro-ims.netlify.app/intro-stat-inference.html#inf-rand">IMS :: Sec 5.1 - Randomization tests</a></p>
+</div>
+</div>
+<div class="slide-deck">
+<p><strong>Unit 4 - Deck 13: Inference overview</strong></p>
+<div class="slides">
+<p><a href="https://gavinfay.github.io/fdd-workshops/course-materials/slides/u4-d13-inference-overview/u4-d13-inference-overview.html#1">Slides</a></p>
+</div>
+<div class="source">
+<p><a href="https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/slides/u4-d13-inference-overview">Source</a></p>
+</div>
+</div>
+<!-- ## Labs -->
+<!-- ::: {.lab} -->
+<!-- **Lab 10: Grading the professor, Pt. 1** -->
+<!-- Fitting and interpreting simple linear regression models -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/lab-instructions/lab-10/lab-10-slr-course-evals.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/lab-instructions/lab-10) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/lab/lab-10-slr-course-evals) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: {.lab} -->
+<!-- **Lab 11: Grading the professor, Pt. 2** -->
+<!-- Fitting and interpreting multiple linear regression models -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/lab-instructions/lab-11/lab-11-mlr-course-evals.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/lab-instructions/lab-11) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/lab/lab-11-mlr-course-evals) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: {.lab} -->
+<!-- **Lab 12: Smoking while pregnant** -->
+<!-- Constructing confidence intervals, conducting hypothesis tests, and interpreting results in context of the data -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/lab-instructions/lab-12/lab-12-inference-smoking.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/lab-instructions/lab-12) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/lab/lab-12-inference-smoking) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ## Homework assignments -->
+<!-- ::: {.homework} -->
+<!-- **HW 7: Bike rentals in DC** -->
+<!-- Exploratory data analysis and fitting and interpreting models -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/hw-instructions/hw-07/hw-07-bike-rentals-dc.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/hw-instructions/hw-07) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/hw/hw-07-bike-rentals-dc) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: {.homework} -->
+<!-- **HW 8: Exploring the GSS** -->
+<!-- Fitting and interpreting models -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/hw-instructions/hw-08/hw-08-exploring-gss.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/hw-instructions/hw-08) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/hw/hw-08-exploring-gss) -->
+<!-- ::: -->
+<!-- ::: -->
+<!-- ::: {.homework} -->
+<!-- **HW 9: Modelling the GSS** -->
+<!-- Model validation and inference -->
+<!-- ::: {.instructions} -->
+<!-- [Instructions](https://gavinfay.github.io/fdd-workshops/course-materials/hw-instructions/hw-09/hw-09-modeling-gss.html) -->
+<!-- ::: -->
+<!-- ::: {.source} -->
+<!-- [Source](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/hw-instructions/hw-09) -->
+<!-- ::: -->
+<!-- ::: {.starter} -->
+<!-- [Starter](https://github.com/gavinfay/fdd-workshops/tree/master/course-materials/starters/hw/hw-09-modeling-gss) -->
+<!-- ::: -->
+<!-- ::: -->
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="wrangling-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="stats-material.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/clipboard.min.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script src="libs/gitbook/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/openintrostat/ims/edit/master/02-linear-models.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
